@@ -45,7 +45,7 @@ Explore code:
 This will build the kit and run the demo app.
 
 ```sh
-bun run dev:demo
+pnpm run dev:demo
 ```
 
 ### Open Demo App in your browser
@@ -53,5 +53,3 @@ bun run dev:demo
 ```sh
 open http://localhost:3000
 ```
-
-
