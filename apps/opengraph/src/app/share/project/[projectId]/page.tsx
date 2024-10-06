@@ -1,9 +1,4 @@
-import {
-  DiscoverApplications,
-  DiscoverRounds,
-  ProjectDetailsWithHook,
-} from "@allo-team/kit";
-import { indexer } from "@allo-team/kit";
+import { indexer, ProjectDetailsWithHook } from "@allo-team/kit";
 import { Metadata } from "next";
 
 export async function generateMetadata({

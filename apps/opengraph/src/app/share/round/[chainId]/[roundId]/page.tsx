@@ -1,16 +1,14 @@
 import {
   Button,
-  FundRound,
-  Markdown,
-  RoundNetworkBadge,
-  RoundStrategyBadge,
-} from "@allo-team/kit";
-import { indexer } from "@allo-team/kit";
-import {
   Drawer,
   DrawerContent,
   DrawerFooter,
   DrawerTrigger,
+  FundRound,
+  indexer,
+  Markdown,
+  RoundNetworkBadge,
+  RoundStrategyBadge,
 } from "@allo-team/kit";
 import { notFound } from "next/navigation";
 import { Applications } from "./applications";

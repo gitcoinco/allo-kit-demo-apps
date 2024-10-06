@@ -26,14 +26,13 @@ export function Projects() {
           <h3 className="text-gray-muted text-sm tracking-wider">Network</h3>
           <Select
             value={network}
-            onValueChange={(val) => router.push(`/?network=${val}`)}
-          >
+            onValueChange={val => router.push(`/?network=${val}`)}>
             <SelectTrigger className="w-[180px]">
               <SelectValue placeholder="Network" />
             </SelectTrigger>
             <SelectContent>
-              {supportedChains?.map((network) => (
-                <SelectItem value={String(network.id)}>
+              {supportedChains?.map(network => (
+                <SelectItem key={network.id} value={String(network.id)}>
                   {network.prettyName}
                 </SelectItem>
               ))}
@@ -54,8 +53,7 @@ export function Projects() {
         renderItem={(application, Card) => (
           <Link
             key={application.key}
-            href={`/share/project/${application.projectId}`}
-          >
+            href={`/share/project/${application.projectId}`}>
             <Card {...application} components={["contributors"]} />
           </Link>
         )}
@@ -73,8 +71,7 @@ export function Projects() {
         renderItem={(round, Card) => (
           <Link
             key={round.key}
-            href={`/share/round/${round.chainId}/${round.id}`}
-          >
+            href={`/share/round/${round.chainId}/${round.id}`}>
             <Card {...round} />
           </Link>
         )}

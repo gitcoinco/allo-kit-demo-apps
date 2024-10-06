@@ -52,8 +52,8 @@ export default function ApplicationPage({
                 <div>
                   <h3 className="font-semibold">Round eligibility criteria</h3>
                   <ul className="list-decimal space-y-4 list-outside pl-4 text-sm">
-                    {round.data?.eligibility.requirements?.map((req) => (
-                      <li>{req.requirement}</li>
+                    {round.data?.eligibility.requirements?.map((req, index) => (
+                      <li key={index}>{req.requirement}</li>
                     ))}
                   </ul>
                 </div>
